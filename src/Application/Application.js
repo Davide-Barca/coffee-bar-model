@@ -26,6 +26,7 @@ export default class Application{
         this.time = new Time()
 
         this.scene = new THREE.Scene()
+        this.scene.fog = new THREE.Fog('#0A001F', 10, 20)
         this.camera = new Camera()
         this.resources = new Resources(sources)
         this.world = new World()
